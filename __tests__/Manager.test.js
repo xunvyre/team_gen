@@ -1,4 +1,4 @@
-const { Manager } = require('../lib/Manager');
+const { Manager } = require('../__lib__/Manager');
 
 test('creates new manager', () =>
 {
