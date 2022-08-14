@@ -9,7 +9,7 @@ test('creates new employee', () =>
     expect(employee.email).toEqual(expect.any(String));
 });
 
-test('checks all methods for Employee class', () =>
+test('checks employee methods', () =>
 {
     const employee = new Employee('Meatloaf G. Pig', 1234, 'stinkman@gmail.com');
 
