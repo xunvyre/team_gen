@@ -1,10 +1,10 @@
-const { Engineer } = require('../__lib__/Engineer');
+const Engineer = require('../__lib__/Engineer');
 
 test('creates engineer', () =>
 {
   const employee = new Engineer('Meatloaf G. Pig', 1234, 'stinkman@gmail.com', 'a-guinea-pig');
 
-  expect(employee.name).toBe("John Smith");
+  expect(employee.name).toBe("Meatloaf G. Pig");
   expect(employee.id).toEqual(expect.any(Number));
   expect(employee.email).toEqual(expect.any(String));
   expect(employee.github).toEqual(expect.any(String));

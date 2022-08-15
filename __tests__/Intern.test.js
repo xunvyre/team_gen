@@ -1,9 +1,9 @@
-const { Intern } = require('../__lib__/Intern');
+const Intern = require('../__lib__/Intern');
 
 test('creates new intern', () =>
 {
     const employee = new Intern('Meatloaf G. Pig', 1234, 'stinkman@gmail.com', 'PigU');
-    expect(employee.name).toBe("John Smith");
+    expect(employee.name).toBe("Meatloaf G. Pig");
     expect(employee.id).toEqual(expect.any(Number));
     expect(employee.email).toEqual(expect.any(String));
     expect(employee.school).toEqual(expect.any(String));
