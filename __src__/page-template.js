@@ -102,11 +102,11 @@ const createInternCard = internData =>
         <div class="card col-md-auto">
             <div class="card-title">
                 <h4>${internData.name}</h4>
-                <h5>Engineer</h5>
+                <h5>Intern</h5>
             </div>
             <div class="card-body">
             <p class="card-text">
-                ID: ${internData.is} <br />
+                ID: ${internData.id} <br />
                 Email: ${internData.email} <br />
                 School: ${internData.school} <br />
             </p>
