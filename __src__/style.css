@@ -33,7 +33,7 @@ header h1
 .row
 {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
 }
 
@@ -46,6 +46,8 @@ main
 {
     margin: 10px 0px;
     padding: 3px;
+    height: 205px;
+    width: 280px;
 }
 
 .card-title
