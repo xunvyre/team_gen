@@ -8,8 +8,10 @@ const Manager = require('./__lib__/Manager');
 const Engineer = require('./__lib__/Engineer');
 const Intern = require('./__lib__/Intern');
 
+//array to store data
 const teamArr = [];
 
+//start with manager
 const startTeam = () =>
 {
     return inquirer.prompt
@@ -45,6 +47,7 @@ const startTeam = () =>
     });
 };
 
+//engineers and interns
 const addEmployees = () =>
 {
     return inquirer.prompt
@@ -116,6 +119,7 @@ const addEmployees = () =>
     );
 };
 
+//call manager creation >> call employee creation >> send the array off to generate HTML >> create index.html and copy over style.css
 startTeam()
     .then(addEmployees)
     .then(teamArr =>

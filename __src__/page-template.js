@@ -1,9 +1,11 @@
+//generates the html
 const generatePage = teamArr =>
 {
     teamCardsArr = [];
 
     for (let i = 0; i < teamArr.length; i++)
     {
+        //identify data and send off to functions for creation
         const currentEmployeeData = teamArr[i];
 
         if (currentEmployeeData.getRole() === 'Manager')
@@ -22,8 +24,9 @@ const generatePage = teamArr =>
             teamCardsArr.push(internCard);
         }
     }
-
+    //join the array together as a string
     const teamCards = teamCardsArr.join('');
+    //and create the html
     return`
     <!DOCTYPE html>
     <html lang="en">
