@@ -1,7 +1,7 @@
 //requires for functions and node modules
 const inquirer = require('inquirer');
 const { writeFile, copyFile } = require('./__utils__/generate-page.js');
-const generatePage = require('./__src__/page-template');
+const generatePage = require('./__src__/page-template.js');
 
 //requires for employees
 const Manager = require('./__lib__/Manager');
@@ -112,7 +112,8 @@ const addEmployees = () =>
             {
                 return teamArr;
             };
-        });
+        }
+    );
 };
 
 startTeam()
@@ -120,4 +121,8 @@ startTeam()
     .then(teamArr =>
         {
             return generatePage(teamArr);
+        })
+    .catch(err =>
+        {
+            console.log(err);
         });
