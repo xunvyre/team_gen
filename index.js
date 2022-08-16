@@ -124,7 +124,7 @@ startTeam()
         })
     .then(pageHTML =>
         {
-            console.log(pageHTML);
+            return writeFile(pageHTML);
         })
     .then(writeFileResponse =>
         {
